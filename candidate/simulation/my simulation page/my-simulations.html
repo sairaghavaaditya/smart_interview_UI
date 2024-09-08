@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simulations | Candidate Dashboard</title>
+    <link rel="stylesheet" href="my-simulations.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Candidate Dashboard</h2>
+        <ul>
+            <li><a href="/candidate/candidate-dashboard.html">Dashboard</a></li>
+            <li><a href="my-simulations.html" class="active">My Simulations</a></li>
+            <li><a href="#">View Feedback</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <h1>My Simulations</h1>
+        </div>
+        <div class="simulations-list">
+            <div class="simulation-card" onclick="viewSimulation('Simulation 1')">
+                <h3>Simulation 1</h3>
+                <p>Date: 01/09/2024</p>
+                <p>Status: Scheduled</p>
+                <button class="start-btn" href="/simulation/my simulation page/start simulation mage/start-simulation.html">Start Simulation</button>
+            </div>
+            <div class="simulation-card" onclick="viewSimulation('Simulation 2')">
+                <h3>Simulation 2</h3>
+                <p>Date: 03/09/2024</p>
+                <p>Status: Scheduled</p>
+                <button class="start-btn" onclick="">Start Simulation</button>
+            </div>
+        </div>
+    </div>
+    <script src="my-simulations.js"></script>
+</body>
+</html>

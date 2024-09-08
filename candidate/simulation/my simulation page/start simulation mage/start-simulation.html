@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Prerequisite</title>
+    <link rel="stylesheet" href="start-simulation.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">DRDO Simulation</div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div class="prerequisite-container">
+        <h1>Interview Prerequisite</h1>
+        
+        <div class="content-sections">
+            <!-- Compatibility Test Section -->
+            <div class="compatibility-section">
+                <h2>Compatibility Test</h2>
+                <div class="compatibility-status">
+                    <video id="webcam-video" autoplay playsinline></video>
+                    <ul>
+                        <li>✔️ Check completed. Your browser is compatible.</li>
+                        <li>✔️ Test completed. Microphone is enabled.</li>
+                        <li>✔️ Test completed. Camera is enabled.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Interview Instructions Section -->
+            <div class="instructions-section">
+                <h2>Interview Instructions</h2>
+                <img src="../images/Screenshot 2024-09-07 182826.png" alt="Interview Instructions">
+                <ol>
+                    <li>Click on the 'Answer' button to start recording and 'End Answer' button to move to the next question.</li>
+                    <li>Answer all the questions to generate the final analytics report.</li>
+                    <li>Do not worry if the transcription text is not accurate, we will improve that before generating the analytics report.</li>
+                    <li>Use your headphones for a better experience.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button class="go-back-btn" onclick="goBack()">Go Back</button>
+            <button class="start-interview-btn" onclick="startInterview()">Start Interview</button>
+        </div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="start-simulation.js"></script>
+</body>
+</html>

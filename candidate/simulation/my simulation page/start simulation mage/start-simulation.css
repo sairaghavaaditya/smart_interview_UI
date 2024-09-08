@@ -1,0 +1,118 @@
+/* Global Styles */
+body {
+    font-family: 'Arial, sans-serif';
+    background: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #1995AD;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 24px;
+}
+
+/* Prerequisite Container */
+.prerequisite-container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.prerequisite-container h1 {
+    color: #1995AD;
+    margin-bottom: 20px;
+}
+
+/* Content Sections */
+.content-sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Compatibility Section */
+.compatibility-section, .instructions-section {
+    flex: 1;
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.compatibility-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#webcam-video {
+    width: 400px;
+    height: 300px;
+    align-self: center;
+    background-color: #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.compatibility-status {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Instructions Section */
+.instructions-section img {
+    width: 400px;
+ 
+    height: 300px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.instructions-section ol {
+    text-align: left;
+    margin-left: 20px;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.go-back-btn, .start-interview-btn {
+    background-color: #1995AD;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.go-back-btn:hover, .start-interview-btn:hover {
+    background-color: #A1D6E2;
+    color: #1995AD;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulation Session</title>
+    <link rel="stylesheet" href="./simulation-session.css">
+</head>
+<body>
+    <!-- Main Simulation Area -->
+    <div class="simulation-session-container">
+        <h1>Simulation In Progress</h1>
+        <p id="timer">Time Remaining: 20:00</p>
+
+        <div class="video-container">
+            <!-- Ensure the video file path is correct -->
+            <video id="ai-video" autoplay muted loop>
+                <source src="../../../../../animation/hehe.mp4" type="video/mp4">
+               
+            </video>
+            
+        </div>
+        
+
+        <!-- Question Display Area -->
+        <div class="question-container">
+            <!-- <h2>Question 1 of 10</h2> -->
+            <p id="question-text">What is your approach to solving complex problems in a team setting?</p>
+        </div>
+
+        <!-- Answer Input Area -->
+        <textarea id="answer-input" placeholder="Type your answer here..."></textarea>
+
+        <!-- Start/End Answer Button -->
+        <div class="button-group">
+            <button class="audio-btn" id="start-btn" onclick="startAnswer()">Start Answer</button>
+            <button class="audio-btn hidden" id="end-btn" onclick="endAnswer()">End Answer</button>
+            <button class="submit-btn" onclick="submitAnswers()">Exit Simulation</button>
+        </div>
+
+        <!-- Recording Status -->
+        <p id="recording-status" class="hidden">Listening...</p>
+    </div>
+
+    <!-- Webcam Display Area -->
+    <div class="webcam-container">
+        <video id="webcam" autoplay></video>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="./simulation-session.js"></script>
+</body>
+</html>

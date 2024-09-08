@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Feedback</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">DRDO Simulation</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="candidate-dashboard.html">Dashboard</a></li>
+            <li><a href="my-simulations.html">My Simulations</a></li>
+            <li><a href="view-feedback.html" class="active">View Feedback</a></li>
+            <li><a href="logout.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Feedback Container -->
+    <div class="feedback-container">
+        <h1>Your Simulation Feedback</h1>
+        <p id="overall-score">Overall Score: 85%</p>
+
+        <!-- Feedback for Each Question -->
+        <div class="feedback-item">
+            <h2>Question 1</h2>
+            <p><strong>Your Answer:</strong> Your answer here...</p>
+            <p><strong>Feedback:</strong> Good approach, but consider adding more details about teamwork strategies.</p>
+            <p><strong>Score:</strong> 8/10</p>
+        </div>
+
+        <div class="feedback-item">
+            <h2>Question 2</h2>
+            <p><strong>Your Answer:</strong> Your answer here...</p>
+            <p><strong>Feedback:</strong> Try to manage time more efficiently. Prioritize tasks better.</p>
+            <p><strong>Score:</strong> 7/10</p>
+        </div>
+
+        <!-- Add more feedback items as needed -->
+
+        <!-- Navigation Button -->
+        <div class="button-group">
+            <button class="nav-btn" onclick="goBack()">Back to Dashboard</button>
+        </div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="scripts.js"></script>
+</body>
+</html>

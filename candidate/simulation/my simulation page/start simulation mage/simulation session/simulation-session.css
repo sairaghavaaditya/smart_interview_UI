@@ -1,0 +1,143 @@
+/* Global Styles */
+body {
+    font-family: 'Arial, sans-serif';
+    background: linear-gradient(135deg, #1995AD, #A1D6E2);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Simulation Session Container Styles */
+.simulation-session-container {
+    width: 70%;
+    margin: 50px auto;
+    background-color: #F1F1F2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+.video-container {
+    width: auto;
+    max-width: 600px;
+    height: auto;
+    
+}
+video {
+    width: 100%;
+    border-radius: 8px;
+    height:300px;
+}
+.simulation-session-container h1 {
+    color: #1995AD;
+    margin-bottom: 20px;
+}
+
+#timer {
+    font-size: 18px;
+    color: #A1D6E2;
+    margin-bottom: 20px;
+}
+
+
+.question-container {
+    background-color: #A1D6E2;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    animation: questionSlide 1s ease-in-out;
+}
+
+.question-container h2 {
+    color: #1995AD;
+}
+
+#question-text {
+    font-size: 16px;
+}
+
+#answer-input {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #1995AD;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.audio-btn, .submit-btn {
+    background-color: #1995AD;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.audio-btn:hover, .submit-btn:hover {
+    background-color: #A1D6E2;
+    color: #1995AD;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Recording Status */
+#recording-status {
+    font-size: 18px;
+    color: #1995AD;
+    margin-top: 10px;
+}
+
+/* Webcam Container Styles */
+.webcam-container {
+    position: absolute;
+    bottom: 385px;
+    right: 345px;
+    width: 200px;
+    height: 150px;
+    border: 2px solid #1995AD;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #F1F1F2;
+    overflow: hidden;
+}
+
+#webcam {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes questionSlide {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

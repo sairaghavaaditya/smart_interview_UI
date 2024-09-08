@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS user_responses (
+    user_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    question_id INTEGER,
+    response TEXT,
+    score INTEGER
+);

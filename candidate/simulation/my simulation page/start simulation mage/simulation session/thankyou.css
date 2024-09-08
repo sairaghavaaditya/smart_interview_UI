@@ -1,0 +1,69 @@
+/* thankyou.css */
+
+/* Global Styles */
+body {
+    font-family: 'Arial, sans-serif';
+    background: linear-gradient(135deg, #1995AD, #A1D6E2);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Thank You Container */
+.thank-you-container {
+    text-align: center;
+    background-color: #F1F1F2;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.thank-you-container h1 {
+    color: #1995AD;
+    margin-bottom: 20px;
+}
+
+.thank-you-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dashboard-btn, .home-btn {
+    background-color: #1995AD;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard-btn:hover, .home-btn:hover {
+    background-color: #A1D6E2;
+    color: #1995AD;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
